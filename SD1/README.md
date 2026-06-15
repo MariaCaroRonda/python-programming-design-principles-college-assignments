@@ -14,7 +14,7 @@ The program asks the user to enter an IPv4 address, validates that it is in the 
 - IP address classification
 - Testing documentation
 
-## Result
+## Assignment Result
 
 Distinction — 30/30
 

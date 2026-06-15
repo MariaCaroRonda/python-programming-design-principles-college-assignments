@@ -61,7 +61,7 @@ The program checks:
 
 The program also uses a menu-driven interface so the user can choose whether to check an IP address or exit the program.
 
-## Result
+## Assignment Result
 
 Distinction — 30/30
 
