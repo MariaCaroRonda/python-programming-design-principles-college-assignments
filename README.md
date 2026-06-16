@@ -1,4 +1,4 @@
-# Python Programming and Design Principles Assignments
+# Python Programming and Design Principles Projects
 
 This repository contains Python projects completed as part of the Programming and Design Principles 5N2927 module.
 
