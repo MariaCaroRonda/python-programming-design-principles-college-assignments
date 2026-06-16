@@ -20,15 +20,15 @@ Skills demonstrated:
 
 ### SD2 – Calculator Application
 
-A Python calculator program created to practise program design, user input handling, and arithmetic operations.
+A menu-driven Python calculator application that performs basic arithmetic operations with input validation and error handling.
 
 Skills demonstrated:
 
-* User input handling
+* Object-Oriented Programming (OOP)
+* User input validation
 * Arithmetic operations
-* Conditional statements
-* Program design
-* Testing and debugging
+* Loops and conditional logic
+* Exception handling
 
 ## Technologies Used
 
@@ -60,7 +60,7 @@ python-programming-design-principles-college-assignments/
 │   └── development-notes.md
 │
 ├── SD2/
-│   ├── Calculator.py
+│   ├── calculator.py
 │   ├── README.md
 │   └── development-notes.md
 │
