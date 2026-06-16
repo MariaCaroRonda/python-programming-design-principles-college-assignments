@@ -1,36 +1,68 @@
-# SD1: IPv4 Address Validator and Classifier
+# Development Notes – SD1 IPv4 Address Validator and Classifier
 
-A menu-driven Python program created for my **Programming and Design Principles 5N2927** module.
+## Requirements
 
-The program asks the user to enter an IPv4 address, validates that it is in the correct format, and classifies valid addresses as Class A, B, C, D, E, or Loopback.
+The program needed to:
 
-## Skills Demonstrated
+* Ask the user to enter an IPv4 address
+* Validate the address format
+* Check numeric values
+* Check valid ranges
+* Identify the IP class
+* Display clear messages
 
-- Python classes and methods
-- User input handling
-- String splitting and validation
-- Loops and conditional logic
-- Input validation
-- IP address classification
-- Testing documentation
+## Design Decisions
 
-## Assignment Result
+I created an `IPAddressChecker` class to separate the validation and classification logic.
 
-Distinction — 30/30
+The validation process was divided into several methods:
 
-## Run
+* `has_ipv4_format()`
+* `parts_are_numeric()`
+* `parts_in_range()`
+* `get_ip_class()`
 
-Requires Python 3.
+This made each method responsible for one task and made the code easier to understand and maintain.
 
-From the repository root:
+## Challenges
 
-```bash
-python SD1/IPChecker.py
-```
+One challenge was making sure invalid addresses were rejected before classification.
 
-If you run it from inside the SD1 folder:
+To solve this, I performed validation in stages before identifying the IP class.
 
-```bash
-python IPChecker.py
-```
+I also needed to handle invalid inputs such as:
 
+* Missing octets
+* Non-numeric values
+* Numbers outside the valid range
+
+## What I Learned
+
+This project helped me practise:
+
+* Object-Oriented Programming (OOP)
+* User input validation
+* String manipulation
+* Loops and conditional statements
+* Creating and using classes
+* Testing a program with valid and invalid data
+
+## Possible Improvements
+
+Some ideas for future improvements:
+
+* Add IPv6 validation
+* Save results to a file
+* Create a graphical user interface (GUI)
+* Add automated tests
+
+During testing and review, I identified a couple of areas that could be improved:
+
+* The validation process is split across several methods, which results in multiple validation checks in the main program loop. This could be refactored into a simpler validation workflow.
+* Addresses beginning with `0` are currently classified as `Unknown`. The classification logic could be extended to handle these addresses more clearly.
+
+## Conclusion
+
+This project gave me practical experience with Python programming, input validation, and object-oriented programming.
+
+It also helped me understand the importance of checking user input before processing data and organising code into smaller, reusable methods.
